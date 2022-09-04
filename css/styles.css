@@ -560,6 +560,9 @@ body {
   flex-wrap: wrap;
   gap: 30px;
 }
+.cards-link {
+  display: block;
+}
 
 .cards-item:hover,
 .cards-item:focus {
