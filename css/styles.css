@@ -100,6 +100,9 @@ body {
 
   padding-top: 32px;
   padding-bottom: 32px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-item:hover,
@@ -135,6 +138,9 @@ body {
 .contant-link {
   display: flex;
   align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contant-link:hover,
@@ -147,12 +153,18 @@ body {
   width: 16px;
   height: 12px;
   fill: var(--secondary-text-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .auth-nav .tel {
   margin-right: 10px;
   width: 10px;
   height: 16px;
   fill: var(--secondary-text-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contant-link:hover .activation-icon,
 .contant-link:focus .activation-icon {
@@ -360,6 +372,9 @@ body {
 
 .social-icon {
   fill: var(--social-icon-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover {
   background-color: var(--activation-color);
@@ -397,6 +412,9 @@ body {
 
   border-radius: 4px;
   border: 1px solid var(--social-icon-color);
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client__link {
   display: flex;
@@ -407,6 +425,9 @@ body {
 }
 .client__icon {
   fill: var(--social-icon-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client__item:hover,
 .client__item:focus {
@@ -457,7 +478,9 @@ body {
   letter-spacing: 0.02em;
 
   margin-bottom: 9px;
-
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* Или использовать padding ??? */
 }
 
@@ -506,6 +529,10 @@ body {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-item .social-icon {
@@ -540,6 +567,10 @@ body {
   border-radius: 4px;
 
   padding: 6px 22px;
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-list li:not(:last-child) {
@@ -562,6 +593,12 @@ body {
 }
 .cards-link {
   display: block;
+}
+
+.cards-item {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cards-item:hover,
