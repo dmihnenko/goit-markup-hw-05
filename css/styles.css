@@ -112,6 +112,13 @@ body {
 .current {
   color: var(--activation-color);
 }
+.current.current-link::after {
+  content: "";
+  display: block;
+
+  border-bottom: 4px solid var(--activation-color);
+  border-radius: 2px;
+}
 .main-nav nav {
   margin-right: auto;
 }
@@ -305,6 +312,31 @@ body {
   gap: 30px;
 }
 
+.work-item {
+  position: relative;
+  padding: 27px, 113px;
+}
+.work-description {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+
+  padding-top: 27px;
+
+  width: 100%;
+  height: 70px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-text-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
 /*=====  End of work  ======*/
 
 /*=============================================
@@ -370,9 +402,11 @@ body {
   border-radius: 50%;
 }
 
-.social-icon {
+.social-icon,
+.social-link {
   fill: var(--social-icon-color);
-  transition-property: fill;
+
+  transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
